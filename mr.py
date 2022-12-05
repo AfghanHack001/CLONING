@@ -1,4 +1,3 @@
-Lol
 #coding=utf-8
 #!/usr/bin/python3
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
