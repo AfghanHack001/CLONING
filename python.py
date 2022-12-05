@@ -153,29 +153,6 @@ def main():
     	print ('SELECT CORRECT OPTION')
     version()
     
-def login():
-    os.system('clear');print(banner)
-    tok = input('\033[1;37m[+]  \033[1;36mPUTT ACCESS TOKEN\033[1;31m : \033[1;32m')
-    if 'EAAB' in tok:
-        pass
-    else:
-        print('  \033[1;37mOnly fb ads access token can be used for scraping data')
-        print('  \033[1;37mCheck main menu for creating fb ads access token....o')
-        os.sys.exit()
-    try:
-        u = requests.get('https://graph.facebook.com/me?access_token='+tok).text
-        u1 = json.loads(u)
-        name = u1['name']
-        ts = open('access_token.txt', 'w')
-        ts.write(tok)
-        ts.close()
-        print('\033[1;92m\t Logged in successfully')
-        time.sleep(1)
-        version()
-    except KeyError:
-        print('\n\033[1;91m  Invalid token provided, try again  ')
-        time.sleep(1)
-        login()      
 def banner():
 	print(banner)
 def hasil(ok,cp):
