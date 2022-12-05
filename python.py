@@ -119,7 +119,7 @@ header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-f
 def main():
     os.system('clear');print(banner)
     print('\033[1;32m                  ┌─────────┐') 
-    print("\033[1;92m       \t│\033[1;96mMAIN MENU\033[1;92m│")
+    print("\033[1;92m                \t│\033[1;96mMAIN MENU\033[1;92m│")
     print('\033[1;32m┌────────────────────────────────────────────┐') 
     print('\033[1;92m│\033[1;37m[01] \033[1;96mFILE CLONING   \033[1;37m[\033[1;32mCP/OK MIX IDS\033[1;37m] \033[1;31m(\033[1;32mFAST\033[1;31m) \033[1;32m │ ')
     print('\033[1;92m│\033[1;37m[02] \033[1;96mFILE CLONING   \033[1;37m[\033[1;32mONLY OK IDS  \033[1;37m] \033[1;31m(\033[1;32mSLOW\033[1;31m) \033[1;32m │')
